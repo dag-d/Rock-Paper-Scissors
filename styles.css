@@ -52,6 +52,6 @@ section {
   cursor: pointer;
 }
 
-#restart :hover {
+#restart:hover {
   background-color: #03428b;
 }
