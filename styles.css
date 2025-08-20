@@ -31,7 +31,6 @@ h1 {
   transform: scale(1.2); /* Add a fun hover effect */
 }
 
-
 .setup-controls {
   display: flex;
   justify-content: space-between;
@@ -78,4 +77,24 @@ h1 {
 #startBtn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 25px #ff00cc;
+}
+
+#resetBtn {
+  display: none;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  margin-top: 2rem;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff00cc;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#resetBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ff00cc, 0 0 40px #ff00cc;
 }
