@@ -9,18 +9,33 @@
     
     <h1>Rock - Paper- Scissors</h1>
 
-    <div id="choices">
-        <button onclick="playGame('rock')"> 👊🏼 </button>
-        <button onlcick="playGame('paper')">✋🏼</button>
-        <button onclick="playGame('scissors')">✌🏼</button>
-    </div>
+<div id="choices">
+     <button class="emoji-btn" onclick="playGame('rock')">👊🏼</button>
+     <button class="emoji-btn" onclick="playGame('paper')">✋🏼</button>
+     <button class="emoji-btn" onclick="playGame('scissors')">✌🏼</button>
+</div>
+
     <section>
         <div id="playerDisplay">PLAYER:</div>
        <div id="computerDisplay">COMPUTER:</div>
        <div id="round"> Round</div>
-      <div id="result"></div>
+      
     </section>
-    <button id="Start">Start Game</button>
+    <div id="setup">
+      <div class="setup-controls">
+        <div class="round-selector">
+          <label for="rounds">Choose rounds:</label>
+          <select id="rounds">
+             <option value="3">3</option>
+             <option value="5" selected>5</option>
+             <option value="7">7</option>
+         </select>
+      </div>
+      <button id="startBtn" onclick="startGame()">Start Game</button>
+     </div>
+    </div>
+    <div id="result"></div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -48,14 +48,19 @@ function getResult(player, computer) {
   }
 }
 
-function showFinalResult() {
-  if (playerScore > computerScore) {
-    resultDisplay.textContent = "🎉 You won the game!";
-  } else if (playerScore < computerScore) {
-    resultDisplay.textContent = "😢 You lost the game!";
+function showfinalResult(result) {
+  const resultDisplay = document.getElementById("result");
+  let emoji = "";
+
+  if (result === "You Win!") {
+    emoji = "🎉🔥😎";
+  } else if (result === "You Lose!") {
+    emoji = "😢💔👎";
   } else {
-    resultDisplay.textContent = "🤝 It's a tie!";
+    emoji = "🤝😐🔄";
   }
+
+  resultDisplay.innerHTML = `<strong style="font-size: 1.5em; color: #ff00cc;">${result}</strong> ${emoji}`;
 }
 
 restartBtn.addEventListener("click", () => {
